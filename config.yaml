@@ -21,32 +21,32 @@ stepping:
 axes:
   homing_runs: 2
   x:
-    steps_per_mm: 400.0
+    steps_per_mm: 200.0
     max_rate_mm_per_min: 1000.0
     acceleration_mm_per_sec2: 25.0
-    max_travel_mm: 60000.0
-    soft_limits: true
-    homing:
-      cycle: 2
-      positive_direction: false
-    motor0:
-      limit_neg_pin: gpio.4:high:pu
-      hard_limits: true
-      pulloff_mm: 1.0
-      standard_stepper:
-        step_pin: gpio.14
-        direction_pin: gpio.12
-  y:
-    steps_per_mm: 400.0
-    max_rate_mm_per_min: 1000.0
-    acceleration_mm_per_sec2: 25.0
-    max_travel_mm: 40000.0
+    max_travel_mm: 40000
     soft_limits: true
     homing:
       cycle: 2
       positive_direction: false
     motor0:
       limit_neg_pin: gpio.17:high:pu
+      hard_limits: true
+      pulloff_mm: 1.0
+      standard_stepper:
+        step_pin: gpio.12
+        direction_pin: gpio.14
+  y:
+    steps_per_mm: 200.0
+    max_rate_mm_per_min: 1000.0
+    acceleration_mm_per_sec2: 25.0
+    max_travel_mm: 60000
+    soft_limits: true
+    homing:
+      cycle: 2
+      positive_direction: false
+    motor0:
+      limit_neg_pin: gpio.4:high:pu
       hard_limits: true
       pulloff_mm: 1.0
       standard_stepper:
