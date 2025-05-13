@@ -24,8 +24,8 @@ axes:
     steps_per_mm: 200.0
     max_rate_mm_per_min: 1000.0
     acceleration_mm_per_sec2: 25.0
-    max_travel_mm: 40000
-    soft_limits: true
+    max_travel_mm: 600
+    soft_limits: false
     homing:
       cycle: 2
       positive_direction: false
@@ -40,8 +40,8 @@ axes:
     steps_per_mm: 200.0
     max_rate_mm_per_min: 1000.0
     acceleration_mm_per_sec2: 25.0
-    max_travel_mm: 60000
-    soft_limits: true
+    max_travel_mm: 924
+    soft_limits: false
     homing:
       cycle: 2
       positive_direction: false
@@ -53,11 +53,11 @@ axes:
         step_pin: gpio.33
         direction_pin: gpio.27
   z:
-    steps_per_mm: 400.0
+    steps_per_mm: 200.0
     max_rate_mm_per_min: 1000.0
     acceleration_mm_per_sec2: 25.0
-    max_travel_mm: 10
-    soft_limits: true
+    max_travel_mm: 106
+    soft_limits: false
     homing:
       cycle: 1
       positive_direction: true
@@ -70,8 +70,8 @@ axes:
         direction_pin: gpio.26:low
 
 uart1:
-  txd_pin: gpio.18
-  rxd_pin: gpio.19
+  txd_pin: gpio.19
+  rxd_pin: gpio.18
   rts_pin: gpio.21
   baud: 9600
   mode: 8N1
@@ -80,7 +80,7 @@ NowForever:
   uart_num: 1
   modbus_id: 1
   tool_num: 0
-  speed_map: 0=0% 24000=100%
+  speed_map: 0=100% 24000=100%
   off_on_alarm: false
 
 parking:
